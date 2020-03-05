@@ -1,0 +1,88 @@
+.grid-container{
+	display:grid;
+	background-color:rgb(240,75,75);
+	grid-row-gap : 10px;
+	grid-template-areas: 
+	  'header header header header header'
+	  ' . main main main . '
+	  ' . main main main . '
+	  ' . main main main . '
+      ' . . . . .';	  
+	
+}
+
+.header{
+	grid-area:header;
+	background-image:url("header3.jpg");
+	height:400px;
+	color:white;
+	text-align:center;
+}
+
+#s1{
+	height:30px;
+	width:30%;
+    background:rgb(0,0,0,0.5);
+	border:none;
+    color:white;	
+}
+
+.main{
+	grid-area:main;
+	height:800px;
+	margin:30px;
+	background-color:rgb(255,125,125);
+	color:white;
+	text-align:center;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.mimg{
+	display:block;
+	float:left;
+	background-image:url("hcol.jpg");
+	background-repeat:repeat-y;
+	width:35%;
+	height:800px;
+	color:black;
+	text-align:center;
+}
+.mcontent{
+	display:block;
+	float:left;
+	width:60%;
+	height:800px;
+	background-color:rgb(255,125,125);
+	text-align:center;
+}
+
+.mcontent > p.organise{
+	line-height:0;
+	text-align:left;
+	color:black;
+	font-family: sans-serif;
+	font-size:8vw;
+}
+
+.mcontent > p.interact{
+	line-height:0.2;
+	text-align:center;
+	color:white;
+	font-family: sans-serif;
+	font-size:6vw;
+}
+
+.text{
+	text-align:center;
+	color:black;
+	font-family: cursive;
+	font-size:1.3vw;
+}
+
+
+
+
+
+
+
+
+
